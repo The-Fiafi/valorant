@@ -1,0 +1,87 @@
+.header-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    top: 0;
+    background-color: #111111;
+    font-weight: 300;
+    letter-spacing: .08em;
+
+    .dowload {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+
+        .language {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+            width: 32px;
+            border-radius: 10px;
+            margin-right: 5px;
+            
+            &:hover {
+                background-color: #292929;
+            }
+        }
+
+        .regist-btn {
+            width: 85px;
+            height: 32px;
+            color: #111111;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 12px;
+            letter-spacing: 0px;
+            font-weight: 600;        
+            background: linear-gradient(135deg, #FF3342 0%, #FF3040 0.01%, #FF7D66 100%);
+        }
+    }
+
+    &:first-child {
+        padding-left: 36px;
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .logo {
+        height: 100%;
+        max-width: 95px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    
+        &:hover .logo-image {
+            transition: 0.1s;
+            fill: red;
+        }
+    }
+
+    .navigator-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 18px;
+
+        &:first-child {
+            margin-left: 30px;
+        }
+
+        
+    }
+
+    .arrow {
+        margin-left: 5px;
+    }
+}

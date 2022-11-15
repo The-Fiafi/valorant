@@ -1,0 +1,135 @@
+.agent-biography {
+    position: relative;
+    display: flex;
+    height: 645px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 80px;
+
+    .background {
+        position: absolute;
+        overflow: hidden;
+        max-width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &-container {
+        position: relative;
+        width: 100%;
+        max-width: 1230px;
+        height: 100%;
+
+        .agent-selection-bar-container {
+            position: absolute;
+            overflow: hidden;
+            left: 0;
+            z-index: 3;
+            height: 100%;
+            width: calc(42% + 1.25em);
+            
+            &::before {
+                content: '';
+                position: absolute;
+                left: -10px;
+                height: 100%;
+                top: 0;
+                width: 10px;
+                z-index: 4;
+            }
+        
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 10px;
+                z-index: 4;
+            }
+        }
+
+        .agent-image-container {
+            position: relative;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            z-index: 2;
+
+            .agent-image {
+                position: absolute;
+                transition: 0.5s;
+                height: 760px;
+            }
+        }
+
+        .agents-biography {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25%;
+            height: 100%;
+
+            .agents-biography-centered {
+                position: relative;
+                transition: 0.5s;
+                display: flex;
+                align-items: center;   
+                color: #ece8e1 ;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+
+                .agents-biography-container {
+                    position: relative;
+
+                    .agents-biography-header {
+                        margin-bottom: 30px;
+
+                        .agents-biography-role {
+                            text-transform: uppercase;
+                            font-size: 30px;
+                            font-weight: 700;
+                            display: flex;
+                            font-family: Oswald, sans-serif;
+
+                            &-icon {
+                                width: 30px;
+                                height: 30px;
+                                margin: 5px;
+                            }
+                        }
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 9px;
+                        height: 8px;
+                        background-color: #ece8e1;
+                        left: 0;
+                        bottom: -100px;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 1px;
+                        background-color: #ece8e1c2;
+                        bottom: -50px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.scamble-text-container {
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}

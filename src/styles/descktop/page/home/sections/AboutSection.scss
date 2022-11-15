@@ -1,0 +1,167 @@
+.about-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: #ECE8E1;
+    overflow: hidden;
+    padding-bottom: 50px;
+
+    &-container {
+        max-width: 1230px;
+        height: 100%;
+        width: 90%;
+        padding-top: 40px;
+        position: relative;
+        
+        .about-container-items {
+            margin-left: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            .header-text-container {
+                font-size: 70px;
+            }
+
+            .about-scamble-text {
+                color: #FF4655;
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                max-width: 130px;
+                padding-top: 10px;
+                transform: rotate(180deg);
+
+                .about-section-underline {
+                    width: 100%;
+                    height: 4px;
+                    background-color: #FF4655;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .about-section-content-container {
+                width: 100%;
+                margin-left: 10%;
+                padding-top: 45px;
+                display: flex;
+                justify-content: space-between;
+
+                .about-section-content-text {
+                    width: 245px;
+
+                    h5 {
+                        font-size: 21px;
+                    }
+
+                    .about-section-text {
+                        color: #768079;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    
+                    .button-about-section {
+                        margin-top: 50px;
+                    }
+                }
+
+                .about-section-video {
+                    position: relative;
+                    width: 690px;
+                    margin-top: 18%;
+                    margin-left: 150px;
+                    
+                    .about-detail-box {
+                        position: absolute;
+                        width: 9px;
+                        height: 8px;
+                        background: #FF4655;
+                        top: -50px;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            margin-left: 70px;
+                            width: 9px;
+                            height: 8px;
+                            background: #FF4655;
+                        }
+                    }
+
+                    
+                }
+
+                &::before {
+                    content: '';
+                    width: 7px;
+                    height: 7px;
+                    background-color: #FF4655;
+                    position: absolute;
+                    bottom: 20%;
+                    left: 10%;
+                }
+
+                &::after {
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    background-color: #FF4655;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+
+            .about-section-number-overview {
+                position: relative;
+
+                .underline-overview {
+                    top: -10px;
+                    width: 100%;
+                    height: 4px;
+                    background: #DBD9D2;
+                }
+
+                .about-section-number-overview-text {
+                    font-size: 50px;
+                    color: #DBD9D2;
+                }
+            }
+
+            &::before {
+                content: '';
+                width: 14px;
+                height: 15px;
+                background: #FF4655;
+                position: absolute;
+                right: 20%;
+                top: 14px;
+            }
+
+            &::after {
+                content: '';
+                width: 7px;
+                height: 7px;
+                background: #FF4655;
+                position: absolute;
+                top: 20%;
+                left: 0;
+                z-index: 2;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 90%;
+            height: 1px;
+            top: 0;
+            right: 0;
+            background-color: #C0BFBB;
+        }
+    }
+}

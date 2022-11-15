@@ -1,0 +1,96 @@
+.button-valorant {
+    width: 250px;
+    height: 60px;
+    position: relative;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    border: 0;
+
+    .top-label {
+        width: calc(100% - 3px);
+        height: calc(100% - 3px);
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: -2px;
+    }
+
+    .bottom-label {
+        width: 245px;
+        height: calc(100% - 3px);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .border-button-top {
+        position: absolute;
+        width: 105%;
+        height: 55%;
+        top: -10px;
+        left: -3%;
+        background: transparent;
+        border-bottom: 0 !important;
+    }
+
+    .border-button-bottom {
+        position: absolute;
+        width: 105%;
+        height: 32px;
+        bottom: -10px;
+        left: -3%;
+        background: transparent;
+        border-top: 0 !important;
+    }
+
+    .button-module-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        overflow: hidden;
+
+        .button-hover-mask {
+            transition: 0.5s;
+            position: absolute;
+            width: 110%;
+            height: 100%;
+            z-index: 3;
+            left: -120%;
+            transform: skew(-10deg);
+        }
+    }
+
+    &:hover .button-hover-mask {
+        transition: 0.5s;
+        left: -5%;
+    }
+
+    
+}
+
+.button-valorant:hover .button-bold-text {
+    transition: 0.5s;
+    color: white !important;
+}
+
+.button-bold-text {
+    transition: 0.5s;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: normal;
+    z-index: 3;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,151 @@
+.news-list-section {
+    height: 435px;
+    width: 100%;
+    position: relative;
+
+    .background {
+        .news-scamble-text-container {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            width: 100px;
+            transform: rotate(90deg);
+            color: #8b978f;
+        }
+    }
+
+    .navigation {
+        display: block;
+        position: relative;
+
+        .news-header-text {
+            font-size: 30px;
+        }
+
+        .navigation-button-container {
+            transition: 0.3s;
+            width: 100%;
+            display: flex;
+
+            .navigation-button {
+                margin-right: 10px;
+                width: 33px;
+                height: 5px;
+                border: 1px solid #8b978f;
+                cursor: pointer;
+            }
+
+            .select-button {
+                background-color: #FF4655;
+            }
+        }
+    }
+
+    .news-list-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+
+        
+        .news-cards {
+            height: max-content;
+            width: max-content;
+            position: absolute;
+            overflow: hidden;
+            display: flex;
+            bottom: 0;
+
+            .news-card {
+                position: relative;
+                flex: 1 0 22%;
+                bottom: 50px;
+                max-width: 270px;
+                width: 20%;
+                height: 240px;
+                border: 1px solid #8b978f;
+                cursor: pointer;
+                margin-right: 30px;
+                margin-top: 60px;
+                overflow: hidden;
+
+                .news-logo {
+                    background: url(https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7129f3c39301ece2/61453642f725af79f53fc987/9212021_PatchNotes3.06_Kayo_Astra_1920x1080.jpg?auto=webp&disable=upscale&width=270);
+                    width: 100%;
+                    height: 60%;
+                }
+
+                .news-info {
+                    position: relative;
+                    background-color: #ECE8E1;
+                    height: 40%;
+                    padding: 20px 20px 0 40px;
+
+                    .news-timestamp {
+                        color: #bdbcb7;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+                    .news-descryption {
+                        color: #383e3a;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                    }
+
+                    .news-index {
+                        transform: rotate(-90deg);
+                        width: max-content;
+                        position: absolute;
+                        left: 0;
+                        top: 25px;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+                }   
+
+
+                &:hover .news-decorator {
+                    left: -20px !important;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 4px;
+                    background-color: #FF4655;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+
+                .news-decorator {
+                    transition: 0.5s;
+                    position: absolute;
+                    width: 110%;
+                    height: 60%;
+                    background-color: rgb(255, 70, 85);
+                    mix-blend-mode: multiply;
+                    left: -200%;
+                    top: 0;
+                    transform: skewX(-10deg);
+                    z-index: 2;
+                }
+            }
+        }
+    }
+
+    &:hover .cursor-decorator {
+        display: block !important;
+    }
+}
+
+.cursor-decorator {
+    z-index: 0;
+}

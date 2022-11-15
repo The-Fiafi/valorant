@@ -1,0 +1,35 @@
+.agent-scroll {
+    position: absolute;
+    width: 535px;
+
+    .agent-scroll-container {
+        width: 100%;
+        color: #ece8e1;
+        font-size: 100px;
+        line-height: 100px;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        margin: 5px 0;
+        position: relative;
+        
+        .agent-index {
+            font-size: 14px;
+            position: absolute;
+            top: calc(-50% + 20px);
+            left: -20px;
+        }
+    
+        .agent-scroll-name {
+            transition: 0.5s;
+        
+            &:hover  {
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+.select {
+    color: #ff4655 !important;
+    margin-left: 25px;
+}

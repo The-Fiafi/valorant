@@ -1,0 +1,80 @@
+.hot-valorant-news {
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .news-mask-transition {
+        width: 50px;
+        height: 50px;
+        background: white;
+        position: absolute;
+        top: -25px;
+        left: -25px;
+        transform: rotate(45deg);
+    }
+
+    .background-text-container {
+        width: calc(100% - 100px);
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        padding-left: 100px;
+    }
+
+    .valorant-news-container {
+        position: relative;
+
+        .news {            
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding-top: 100px;
+            padding-bottom: 200px;
+
+            .news-header {
+                position: absolute;
+                font-size: 70px;
+                top: 40px;
+                left: 20px;
+                z-index: 1;
+            }
+
+            .see-more {
+                position: absolute;
+                right: 100px;
+                top: 40px;
+                color: #FF4655;
+                cursor: pointer;
+
+                &-text {
+                    display: flex;
+                    position: relative;
+                    z-index: 1;
+
+                    .arrow-right {
+                        position: absolute;
+                        right: -70px;
+                        transition: 0.5s;
+                        margin-right: 20px;
+                        width: 23px;
+                    }
+                }
+
+                &:hover .arrow-right {
+                    transition: 0.5s;
+                    right: -90px;
+                }
+            }
+
+            .news-top-list-container {
+                display: flex;
+                justify-content: center;
+                max-width: 1230px;
+            }
+        }
+    }
+}

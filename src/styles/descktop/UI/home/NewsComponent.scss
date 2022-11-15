@@ -1,0 +1,53 @@
+.news-container {
+    margin-right: 30px;
+    max-width: 30%;
+    cursor: pointer;
+
+    .preview {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .image-news-mask {
+            transition: 0.3s;
+            width: 120%;
+            height: calc(100% - 5px);
+            transform: skewX(-10deg);
+            background: #b6000f8e;
+            position: absolute;
+            left: -130%;
+            z-index: 1;
+        } 
+    }
+
+    .other-info {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 20px 0 15px 0;
+        z-index: 1;
+
+        .type {
+            margin-left: 20px;
+            position: relative;
+            color: #FF4655;
+    
+            &:before {
+                content: '.';
+                position: absolute;
+                left: -10px;
+                color: #0F1923;
+            }
+        }
+    }
+
+    .news-descryption {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    &:hover .image-news-mask {
+        transition: 0.3s;
+        left: -20px;
+    }
+}

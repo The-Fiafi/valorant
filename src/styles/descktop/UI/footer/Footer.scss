@@ -1,0 +1,97 @@
+.footer {
+    padding-bottom: 48px;
+    position: relative;
+    background-color: #111111;
+    z-index: 1;
+
+    &-top {
+        height: 38px;
+        padding: 24px;
+        background-color: #292929;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-content {
+        .icons-links {
+            position: relative;
+            display: flex;  
+            justify-content: center;
+            padding: 18px 0;
+            
+            &-icon {
+                border-radius: 10px;
+                background-color: #282828;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 48px;
+                height: 48px;
+                margin: 6px;
+                cursor: pointer;
+            }        
+        }
+        
+        .company-logo {
+            display: flex;
+            justify-content: center;
+            padding-top: 24px;
+            padding-bottom: 20px;
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            cursor: default;
+
+            &-container {
+                color: #737373;
+                max-width: 640px;
+                font-size: 13px;
+                text-align: center;
+                line-height: 140%;
+            }
+        }
+
+        .xyina-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 24px;
+            margin-bottom: 28px;
+        }
+
+        .age-limit {      
+            display: flex;
+            justify-content: center;
+
+            &-img {
+                padding: 8px 12px;
+                background-color: #282828;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+        }
+    }
+
+    &-text {
+        transition: 0.5s;
+        color: #f9f9f9;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        padding: 8px 16px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.5s;
+            background-color: #80808091;
+        }
+    }
+}

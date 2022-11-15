@@ -1,0 +1,117 @@
+.agents-page {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    position: relative;
+    overflow: hidden;
+
+    &-background {
+        position: absolute;
+    }
+
+    .agents-page-container {
+        transition: 0.5s;
+        position: relative;
+        min-height: 645px;
+        width: 1230px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .agent-selection-bar-container {
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: calc(42% + 1.25em);
+            
+            &::before {
+                content: '';
+                position: absolute;
+                left: -10px;
+                height: 100%;
+                top: 0;
+                width: 10px;
+                z-index: 4;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 10px;
+                z-index: 4;
+            }
+        }
+
+        .agents-group {
+            animation-name: scale;
+            animation-duration: 1.5s;
+            animation-iteration-count: 1;
+            z-index: 1;
+            position: absolute;
+            bottom: -150px;
+            transition: 0.5s;
+
+            @keyframes scale {
+                0% {
+                    transform: scale(0.9);
+                    bottom: -100px;
+                    opacity: 0.5;
+                }
+                100% {
+                    bottom: -150px;
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+        }
+
+        &-descryption {
+            transition: 0.5s;
+            color: #ece8e1;
+            position: absolute;
+            right: 0;
+            width: 25%;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            z-index: 1;
+            
+            .content-container {
+                position: relative;
+                
+                .scamble-text-container {
+                    font-weight: 700;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    margin-bottom: 25px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 9px;
+                    height: 8px;
+                    background-color: #ece8e1;
+                    left: 0;
+                    bottom: -100px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #ece8e1c2;
+                    bottom: -50px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

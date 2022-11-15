@@ -1,0 +1,83 @@
+.hero-logo {
+    width: 100%;
+    position: absolute;
+
+    .home-video {
+        position: relative;
+        color: white;
+
+        .video-valorant {
+            width: 100%;
+        }
+
+        .home-valorant {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+
+            .home-logo-text {
+                width: 100%;
+                max-width: 1230px;
+                padding-top: 10%;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .home-logo-svg {
+                    position: relative;
+                    margin-top: 0;
+                    width: 100%;
+                    max-width: 700px;
+
+                    &-underline {
+                        position: absolute;
+                        left: 0;
+                        width: 1px;
+                        background: #C0BFBB;
+                        z-index: 0;
+                    }
+                }
+
+                .home-logo-des {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 35px;
+                    font-weight: 300;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -130%;
+                    height: 300%;
+                    width: 1px;
+                    background: #C0BFBB;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: -130%;
+                    height: 300%;
+                    width: 1px;
+                    background: #C0BFBB;
+                }
+            }
+
+            .button-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            }
+        }
+    }
+}

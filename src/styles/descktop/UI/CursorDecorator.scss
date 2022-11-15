@@ -1,0 +1,72 @@
+.cursor-decorator-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .cursor-decorator {
+        position: absolute;
+        display: none;
+        width: 80px;
+        height: 80px;
+        background: transparent;
+        justify-content: center;
+        z-index: 2;
+        
+        .border {
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+    
+        .arrowUp {
+            position: absolute;   
+            width: 20px;
+            height: 20px;
+            transform: rotate(-90deg);
+            left: calc(50% - 10px);
+            top: 10px;
+            animation-name: animationUp;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            transition-timing-function: cubic-bezier(0, 0, 0.38, 0.99);
+        
+            @keyframes animationUp {
+                0% {
+                    top: 15px;
+                }
+                50% {
+                    top: 5px;
+                }
+                100% {
+                    top: 15px;
+                }
+            }
+        }
+    
+        .arrowDown {
+            position: absolute;   
+            width: 20px;
+            height: 20px;
+            transform: rotate(90deg);
+            left: calc(50% - 10px);
+            bottom: 15px;
+            animation-name: animationDown;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            transition-timing-function: cubic-bezier(0, 0, 0.38, 0.99);
+        
+            @keyframes animationDown {
+                0% {
+                    bottom: 15px;
+                }
+                50% {
+                    bottom: 5px;
+                }
+                100% {
+                    bottom: 15px;
+                }
+            }
+        }
+    
+    }
+}

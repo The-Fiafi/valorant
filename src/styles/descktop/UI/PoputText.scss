@@ -1,0 +1,17 @@
+.header-text-container {
+    margin: 0;
+    width: max-content;
+    font-weight: 700;
+    line-height: 77px;
+    font-family: Oswald, sans-serif;
+    position: relative;
+    overflow: hidden;
+
+    .poput-text {
+        transition: 1s;
+        white-space: nowrap;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

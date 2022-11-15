@@ -1,0 +1,13 @@
+.line-wrapper-container {
+    position: relative;
+    max-width: 1230px;
+    width: 90%;
+
+    .line {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: 1px;
+        background: #C0BFBB;
+    }
+}

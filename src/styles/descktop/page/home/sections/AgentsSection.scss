@@ -1,0 +1,106 @@
+.agents-section {
+    background-color: #FF4655;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    &-container {
+        transition: 0.3s;
+        max-width: 1230px;
+        width: 100%;
+        min-height: 550px;
+        margin-top: 130px;
+        display: flex;
+        position: relative;
+        background-image: url(../../../../../../public/img/back/background-sprite2.png);
+
+        .canvas-agent {
+            width: 50%;
+            height: 700px;
+            position: relative;
+
+            &-container {
+                transition: 0.3s;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .text-agent-container {
+            width: 380px;
+            margin-left: 30px;
+            height: 100%;
+            color: #ece8e1;
+            position: relative;
+            margin-top: 5%;
+            font-size: 70px;
+            
+            .agents-section-underline {
+                width: 130%;
+                height: 2px;
+                background-color: #F7868D;
+                position: absolute;
+                top: -50px;
+            }
+
+            .header-text {
+                font-size: 16px;
+            }
+
+            .agent-section-text {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 24px;
+            }
+
+            .button-container-agents {
+                margin-top: 50px;
+                float: right;
+            }
+        }
+
+        &::before {
+            content: '';
+            background-image: url(../../../../../../public/img/back/background-sprite.png);
+            background-position-x: -1px;
+            background-position-y: -1px;
+            height: 540px;
+            width: 32px;
+            position: absolute;
+            left: -55px;
+        }
+
+        &::after {
+            content: '';
+            background-image: url(../../../../../../public/img/back/background-sprite.png);
+            background-position-x: -1px;
+            background-position-y: -1px;
+            height: 540px;
+            width: 32px;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -55px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-right: calc(50vw - 630px) solid transparent;
+        border-bottom: 55px solid #FF4655;
+    }
+
+    &::after {
+        content: '';
+        width: calc(50vw - 600px);
+        height: 6px;
+        background-color: #FF4655;
+        position: absolute;
+        right: 0;
+        top: -6px;
+    }
+}
